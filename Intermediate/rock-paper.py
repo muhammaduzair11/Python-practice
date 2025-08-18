@@ -7,8 +7,10 @@ user_score = 0
 computer_score = 0
 
 
-
 for x in range(num_game):
+
+  if user_score > (num_game/2) or computer_score > (num_game/2):
+    break 
   while True:
     user_choice = input("Choose Rock, Paper or scissor: ").lower()
     if user_choice in elements:
