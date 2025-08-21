@@ -34,7 +34,7 @@ while True:
     print(f"Total Spent = {total_spent}")
 
   elif option == 4:
-    search_category = input("Search Category: ")
+    search_category = input("Search Category: ").lower()
     category_spent = 0
     for x in expenses:
       if x["category"] == search_category:
